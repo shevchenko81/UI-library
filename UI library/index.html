@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicons/safari-pinned-tab.svg"
+      color="#23243e"
+    />
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="img/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- LIBS -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- drop menu -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.1.0/dist/easy-toggler.min.js"></script> -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <nav class="navbar">
+          <a href="#buttons" class="navbar__link">1. Кнопки</a>
+          <a href="#tooltips" class="navbar__link">2. Подсказки</a>
+          <a href="#dropdown" class="navbar__link">3. Выпадающее меню</a>
+          <a href="#checkbox" class="navbar__link">4. checkbox, switch</a>
+          <a href="#input" class="navbar__link">5. Поля ввода</a>
+          <a href="#menubar" class="navbar__link">6. Меню сайта</a>
+          <a href="#modal" class="navbar__link">7. Модальное окно</a>
+          <a href="#cards" class="navbar__link">8. Карточки</a>
+        </nav>
+        <!-- /.navbar -->
+      </div>
+      <main class="main">
+        <section id="buttons" class="section">
+          <h2 class="title">1. Кнопки</h2>
+
+          <button class="btn">Кнопка</button>
+          <button class="btn btn--rounded">Кнопка</button>
+        </section>
+
+        <section id="tooltips" class="section">
+          <h2 class="title">2. Подсказки</h2>
+          <span class="link" data-tooltip="Текст Подсказки"
+            >Подсказка стандарт</span
+          >
+        </section>
+
+        <section class="dropdown">
+          <h2 class="title">3. Выпадающее меню</h2>
+          <div class="dropdown">
+            <a
+              href="#"
+              class="link"
+              easy-toggle="#drop_menu"
+              easy-class="dropdown__drop--active"
+              easy-rcoe
+              >Всплывающее меню</a
+            >
+
+            <div id="drop_menu" class="dropdown__drop">
+              <a href="#" class="dropdown__drop-item">Выпадающее меню</a>
+              <a href="#" class="dropdown__drop-item">Выпадающее меню</a>
+              <a href="#" class="dropdown__drop-item">Выпадающее меню</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="checkbox" class="section">
+          <h2 class="title">4. checkbox, switch</h2>
+          <div>
+            <div>
+              <div class="switch">
+                <input type="checkbox" name="switch1" id="switch1" />
+                <label for="switch1" class="switch__label"
+                  >Текст какого-то свитча</label
+                >
+              </div>
+              <!-- /.switch -->
+            </div>
+            <div>
+              <div class="switch">
+                <input
+                  type="checkbox"
+                  name="switch2"
+                  id="switch2"
+                  checked
+                  disabled
+                />
+                <label for="switch2" class="switch__label"
+                  >Текст какого-то свитча</label
+                >
+              </div>
+              <!-- /.switch-disabled -->
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" name="check1" id="check1" />
+              <label for="check1" class="checkbox__label"
+                >Текст какого-то чекбокса</label
+              >
+            </div>
+            <!-- /.checkbox -->
+          </div>
+        </section>
+
+        <section id="input" class="section">
+          <h2 class="title">5. Поля ввода</h2>
+
+          <div style="width: 440px">
+            <div class="field">
+              <input
+                type="text"
+                class="field__control"
+                placeholder="Введите ваше имя"
+              />
+            </div>
+
+            <div class="field">
+              <span
+                class="iconify field__icon"
+                data-icon="akar-icons:search"
+              ></span>
+              <input type="text" class="field__control" placeholder="Поиск" />
+            </div>
+          </div>
+        </section>
+
+        <section id="menubar" class="section">
+          <h2 class="title">6. Меню сайта</h2>
+          <nav class="menubar">
+            <a href="#" class="menubar__brand">logo</a>
+            <ul class="menubar__nav">
+              <li><a href="" class="menubar__nav-link">О компании</a></li>
+              <li><a href="" class="menubar__nav-link">Услуги</a></li>
+              <li><a href="" class="menubar__nav-link">Кейсы</a></li>
+              <li><a href="" class="menubar__nav-link">Отзывы</a></li>
+              <li><a href="" class="menubar__nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <nav class="menubar menubar--light">
+            <a href="#" class="menubar__brand">logo</a>
+            <ul class="menubar__nav">
+              <li><a href="" class="menubar__nav-link">О компании</a></li>
+              <li><a href="" class="menubar__nav-link">Услуги</a></li>
+              <li><a href="" class="menubar__nav-link">Кейсы</a></li>
+              <li><a href="" class="menubar__nav-link">Отзывы</a></li>
+              <li><a href="" class="menubar__nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section id="modal" class="section">
+          <h2 class="title">7. Модальное окно</h2>
+          <button
+            class="btn"
+            easy-toggle="#modalwin"
+            easy-class="modal--active"
+          >
+            Модальное окно
+          </button>
+        </section>
+
+        <section id="cards" class="section">
+          <h2 class="title">8. Карточки</h2>
+          <a href="#" class="link-unstyled">
+            <article class="card">
+              <img src="img/post.jpg" alt="" class="card__image" />
+              <div class="card__body">
+                <h3 class="card__title">SumaiL присоединился к Nigma Galaxy</h3>
+                <ul class="card__params">
+                  <li>
+                    <span
+                      class="iconify"
+                      data-icon="ant-design:eye-filled"
+                    ></span>
+                    3,4k
+                  </li>
+                  <li>
+                    <span
+                      class="iconify"
+                      data-icon="fluent:comment-12-filled"
+                    ></span>
+                    152
+                  </li>
+                  <li>
+                    <span
+                      class="iconify"
+                      data-icon="ant-design:calendar-filled"
+                    ></span>
+                    <time>28 мая 2022, 15:05</time>
+                  </li>
+                </ul>
+                <p class="card__text">
+                  Пакистанский киберспортсмен Саид 'SumaiL' Самаил Хассан
+                  присоединился к составу Nigma Galaxy по Dota 2.
+                </p>
+                <span class="btn">Читать</span>
+              </div>
+            </article>
+          </a>
+            <br><br>
+          <a href="#">
+            <article class="card-v2" style="background-image: url(img/post.jpg);">
+              <div class="card-v2__body">
+                <h3 class="card-v2__title">
+                  SumaiL присоединился к Nigma Galaxy
+                </h3>
+                <ul class="card-v2__params">
+                  <li>
+                    <span
+                      class="iconify"
+                      data-icon="ant-design:eye-filled"
+                    ></span>
+                    3,4k
+                  </li>
+                  <li>
+                    <span
+                      class="iconify"
+                      data-icon="fluent:comment-12-filled"
+                    ></span>
+                    152
+                  </li>
+                  <li>
+                    <span
+                      class="iconify"
+                      data-icon="ant-design:calendar-filled"
+                    ></span>
+                    <time>28 мая 2022, 15:05</time>
+                  </li>
+                </ul>
+              </div>
+            </artical>
+          </a>
+        </section>
+      </main>
+    </div>
+    <!-- /.container -->
+
+    <div id="modalwin" class="modal">
+      <div class="modal__window">
+        <h2 class="modal__window-title">Заголовок окна</h2>
+        <button
+          class="modal__window-close"
+          easy-remove="#modalwin"
+          easy-class="modal--active"
+        >
+          <span class="iconify" data-icon="eva:close-outline"></span>
+        </button>
+
+        <div class="modal__body">
+          <span class="modal__body-label">Любой контент</span>
+        </div>
+      </div>
+      <div
+        class="modal__overlay"
+        easy-remove="modalwin"
+        easy-class="modal--active"
+      ></div>
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/easy-toggler.min.js"></script>
+    <script src="js/drop-menu.js"></script>
+  </body>
+</html>
